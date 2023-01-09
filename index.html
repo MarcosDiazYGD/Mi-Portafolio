@@ -1,180 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Home - Mi Portafolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container--img__menu ">
-            <img src="assets/icons/menu.svg" id="img-menu" >
+      <div class="container--img__menu">
+        <img src="assets/icons/menu.svg" id="img-menu" />
+      </div>
+      <nav class="navbar" id="navbar">
+        <!-- tamaño desktop === bx-sm -->
+        <div class="container--close">
+          <i class="bx bx-x close-menu" id="close-menu"></i>
         </div>
-        <nav class="navbar" id="navbar">
-            <!-- tamaño desktop === bx-sm -->
-            <div class="container--close">
-                <i class='bx bx-x close-menu' id="close-menu"></i> 
-            </div>
-            <div class="container--menu">
+        <div class="container--menu">
+          <ul class="navbar--ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#about-us">Acerca de mí</a></li>
+            <li><a href="#skills">Mis habilidades</a></li>
+            <li><a href="#portfolio">Mi portafolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+          <ul class="menu--networks">
+            <a href=""></a>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/marcos-alape-diaz-68997b248/"
+                target="_blank"
+                ><img src="assets/icons/linkedin.svg"
+              /></a>
+            </li>
+            <li><img src="assets/icons/github.svg" class="icon--github" /></li>
+            <li><img src="assets/icons/twitter.svg" /></li>
+          </ul>
+        </div>
+      </nav>
 
-                <ul class="navbar--ul">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#about-us">Acerca de mí</a></li>
-                    <li><a href="#skills">Mis habilidades</a></li>
-                    <li><a href="#portfolio">Mi portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-                <ul class="menu--networks">
-                    <li><img src="assets/icons/linkedin.svg" alt=""></li>
-                    <li><img src="assets/icons/instagram.svg" alt=""></li>
-                    <li><img src="assets/icons/twitter.svg" alt=""></li>
-                </ul>
-            </div>
-        </nav>
-
-        <section class="header--information">
-            <section class="header--img__perfil">
-                <img src="assets/media/img/photo desktop.png" alt="img perfil" id="img-perfil" class="img img-perfil">
-                <div class="circle-perfil"></div>
-            </section>
-            <section class="header--information__text">
-               
-                <h1>soy <br> <span class="h1__span">Marcos</span></h1>
-                <p class="paragraph profession-paragraph">Desarrollador web Full - Stack</p>
-
-                <p class="paragraph xp-paragraph"><span class="xp__span">1 año</span> experiencia</p>
-
-                <ul class="information--ul">
-                    <li class="infItem infItem1"><img  src="assets/icons/linkedin.svg" alt="red social linkedin"></li>
-                    <li class="infItem infItem2"><img src="assets/icons/instagram.svg" alt="red social instagram"></li>
-                    <li class="infItem infItem3"><img src="assets/icons/twitter.svg" alt="red social twitter"></li>
-                </ul>
-
-            </section>
-            <section class="header--business">
-                <img src="assets/icons/google.svg" alt="google">
-                <img src="assets/icons/amazon.svg" alt="amazon">
-                <img src="assets/icons/spotify.svg" alt="spotify">
-            </section>
+      <section class="header--information">
+        <section class="header--img__perfil">
+          <img
+            src="assets/media/img/logo.png"
+            alt="img perfil"
+            id="img-perfil"
+            class="img img-perfil"
+          />
+          <div class="circle-perfil"></div>
         </section>
+        <section class="header--information__text">
+          <h1>
+            soy <br />
+            <span class="h1__span">Marcos</span>
+          </h1>
+          <p class="paragraph profession-paragraph">
+            Desarrollador web Full - Stack
+          </p>
 
+          <p class="paragraph xp-paragraph">
+            <span class="xp__span">1 año</span> experiencia
+          </p>
+
+          <ul class="information--ul">
+            <li class="infItem infItem1">
+              <a
+                href="https://www.linkedin.com/in/marcos-alape-diaz-68997b248/"
+                target="_blank"
+                ><img src="assets/icons/linkedin.svg" alt="red social linkedin"
+              /></a>
+            </li>
+            <li class="infItem infItem2">
+              <img src="assets/icons/github.svg" alt="red social instagram" />
+            </li>
+            <li class="infItem infItem2">
+              <img src="assets/icons/cv.svg" alt="red social instagram" />
+            </li>
+          </ul>
+        </section>
+        <section class="header--business">
+          <img src="assets/icons/html.svg" />
+          <img src="assets/icons/css.svg" />
+          <img src="assets/icons/js.svg" />
+          <img src="assets/icons/react.svg" />
+          <img src="assets/icons/github.svg" />
+        </section>
+      </section>
     </header>
 
     <main class="main">
+      <section class="main--about-us" id="about-us">
+        <h2>Acerca de mí</h2>
+        <p>
+          Colombiano, encantado por la programación, autodidacta, emocionado por
+          aprender cosas nuevas cada día, me gusta trabajar en equipo y enseñar
+          a los colegas que estan empezando en este maravilloso mundo.
+        </p>
+      </section>
 
-        <section class="main--about-us" id="about-us">
-            <h2>Acerca de mí</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente earum placeat optio distinctio illum porro amet tempore nostrum consequuntur.</p>
-        </section>
+      <section class="main--services" id="services">
+        <h2>Servicios</h2>
+        <div class="slider--talents">
+          <article class="services--talent talent1">
+            <img src="assets/vector/Ellipse 14.svg" class="elipce" />
 
-        <section class="main--services" id="services">
-            <h2>Servicios</h2>
-                <div class="slider--talents">
-                    <article class="services--talent talent1">
-                        <img src="assets/vector/Ellipse 14.svg" class="elipce">
+            <img
+              src="assets/icons/pencil.svg"
+              alt="imagen lapiz"
+              class="services--talent1__icon"
+            />
 
-                        <img src="assets/icons/pencil.svg" alt="imagen lapiz" class="services--talent1__icon">
+            <h3>Frontend</h3>
 
-                        <h3>UX/UI Design</h3>
+            <p>Capaz de construir aplicaciones web responsivas y complejas con un diseño llamativo </p>
+          </article>
 
-                        <p>Desde diseño hasta implementación del Desarrollo</p>
+          <article class="services--talent talent2">
+            <img src="assets/vector/Ellipse 14.svg" class="elipce" />
 
-                    </article>
+            <img src="assets/icons/speaker.svg" />
 
-                    <article class="services--talent talent2">
-    
-                        <img src="assets/vector/Ellipse 14.svg" class="elipce">
+            <h3>Backend</h3>
 
-                        <img src="assets/icons/speaker.svg">
-                        
-                        <h3>Marketing</h3>
+            <p>Desde diseño hasta implementación del Desarrollo</p>
+          </article>
+          
+        </div>
+      </section>
+      <section class="main--skills" id="skills">
+        <h2>Mis habilidades</h2>
+        <article>
+          <h3>FrontEnd</h3>
 
-                        <p>Desde diseño hasta implementación del Desarrollo</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+            <li>Redux</li>
+          </ul>
+        </article>
+        <article>
+          <h3>BackEnd</h3>
 
-                    </article>
-                    <article class="services--talent talent3">
-    
-                        <img src="assets/vector/Ellipse 14.svg" class="elipce">
-    
-                        <img src="assets/icons/search.svg">
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
+            <li>Sequelize</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Aprendiendo</h3>
 
-                        <h3>Research</h3>
-
-                        <p>Desde diseño hasta implementación del Desarrollo</p>
-
-                    </article>
-                </div>
-         </section>
-         <section class="main--skills" id="skills">
-            <h2>Mis habilidades</h2>
-
-            <article class="skill skill-1">
-                <div class="skill-texts">
-                    <p>UI design</p>
-                    <span>95%</span>
-                </div>
-                <div class="skill-lv">
-                    <div class="porcent1"></div>
-                </div>
-            </article>
-            <article class="skill skill-2">
-                <div class="skill-texts">
-                    <p>Marketing</p>
-                    <span>95%</span>
-                </div>
-                <div class="skill-lv">
-                    <div class="porcent2"></div>
-                </div>
-
-            </article>
-            <article class="skill skill-3">
-                <div class="skill-texts">
-                    <p>UX Research</p>
-                    <span>80%</span>
-                </div>
-                <div class="skill-lv">
-                    <div class="porcent3"></div>
-                </div>
-            </article>
-         </section>
-         <section class="main--portfolio" id="portfolio">
-            <h2>Mi portafolio</h2>
-            <section class="portfolios">
-                    <img src="assets/media/img/ejemplo1.jpg" class="img1">
-                    <img src="assets/media/img/ejemplo2.jpg" class="img2">
-                    <img src="assets/media/img/ejemplo3.jpg" class="img3">
-                    <img src="assets/media/img/ejemplo5.jpg" class="img4">
-            </section>
-         </section>
-         <section class="main--contact" id="contact">
-            <h2>Contacto</h2>
-                <div class="container--contacts">
-                    <article class="phone">
-                        <img src="assets/vector/Ellipse 14.svg" class="contact-elipce">
-                        <img src="assets/icons/phone.svg" class="icon">
-                        <h3>Número celular</h3>
-                        <p>+57 314 385 2592</p>
-                    </article>
-                    <article class="email">
-                        <img src="assets/vector/Ellipse 14.svg" class="contact-elipce">
-                        <img src="assets/icons/mail.svg" class="icon">
-                        <h3>Email</h3>
-                        <p>progmarcosdiaz2022@gmail.com</p>
-                    </article>
+          <ul>
+            <li>TypeScript</li>
+            <li>Sass</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main--portfolio" id="portfolio">
+        <h2>Mi portafolio</h2>
+        <section class="portfolios">
+          <div class="portfolios--overlay overlay1">
+            <img src="assets/media/img/project4.png" class="img4" />
+            <div class="overlay--project">
+              <h3>E-commerce - Tienda en linea</h3>
+              <ul>
+                <li>javaScript</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>redux</li>
+                <li>css</li>
+                <li>git</li>
+              </ul>
             </div>
-
+          </div>
+          <div class="portfolios--overlay overlay2">
+            <img src="assets/media/img/project3.png" class="img3" />
+            <div class="overlay--project">
+              <h3>Rick and Morty - wiki</h3>
+              <ul>
+                <li>css</li>
+                <li>javaScript</li>
+                <li>git</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolios--overlay overlay3">
+            <img src="assets/media/img/project1.png" class="img1" />
+            <div class="overlay--project">
+              <h3>Weather app - app del clima</h3>
+              <ul>
+                <li>css</li>
+                <li>javaScript</li>
+                <li>git</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolios--overlay overlay4">
+            <img src="assets/media/img/project2.png" class="img2" />
+            <div class="overlay--project">
+              <h3>Random Prhases - frases aleatorias</h3>
+              <ul>
+                <li>css</li>
+                <li>javaScript</li>
+                <li>git</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
         </section>
+      </section>
+      <section class="main--contact" id="contact">
+        <h2>Contacto</h2>
+        <div class="container--contacts">
+          <article class="phone">
+            <img src="assets/vector/Ellipse 14.svg" class="contact-elipce" />
+            <img src="assets/icons/phone.svg" class="icon" />
+            <h3>Número celular</h3>
+            <p>+57 314 385 2592</p>
+          </article>
 
+          <a
+            href="mailto:progmarcosdiaz2022@gmail.com?Subject=interesado%20en%20tus%20servicios"
+            class="contact--onClick"
+          >
+            <article class="email">
+              <img src="assets/vector/Ellipse 14.svg" class="contact-elipce" />
+              <img src="assets/icons/mail.svg" class="icon" />
+              <h3>Email</h3>
+              <p>progmarcosdiaz2022@gmail.com</p>
+            </article>
+          </a>
+        </div>
+      </section>
     </main>
 
-
     <footer>
-        <p>Hecho con ♥ en academlo</p>
+      <p>Hecho con ♥ en academlo</p>
     </footer>
     <script src="assets/javascript/main.js"></script>
-</body>
+  </body>
 </html>
