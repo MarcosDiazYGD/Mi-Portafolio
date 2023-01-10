@@ -24,11 +24,50 @@ body {
   padding: 1rem 1.25rem;
   font-size: 16px;
   font-weight: 400;
-  cursor: url('../cursor/pointer-regular-24.png'), auto;
+  cursor: url("../cursor/pointer-regular-24.png"), auto;
 }
 
-a{
-  cursor: url('../cursor/hand-up-solid-24.png'), auto;
+a {
+  cursor: url("../cursor/hand-up-solid-24.png"), auto;
+}
+
+/*================BOTON CV================*/
+.container--button__cv {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 5;
+}
+
+.button--cv {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray);
+  background: var(--dark-blue);
+  transition: 0.3s ease;
+
+  font-size: 14px;
+}
+
+.button--cv:hover {
+  animation: important_link 1s linear infinite;
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+@keyframes important_link {
+  0% {
+    color: var(--gray);
+  }
+  50% {
+    color: var(--white);
+  }
+  100% {
+    color: var(--gray);
+  }
 }
 
 /*================MENU HAMBURGUESA================*/
@@ -339,7 +378,7 @@ a{
 
 .portfolios--overlay {
   position: relative;
-  cursor: url('../cursor/hand-up-solid-24.png'), auto;
+  cursor: url("../cursor/hand-up-solid-24.png"), auto;
   overflow: hidden;
 }
 
@@ -383,26 +422,26 @@ a{
 }
 
 .IN--COMMING {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    animation: rgb infinite 2s linear;
-    min-height: 200px;
-    text-align: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  animation: rgb infinite 2s linear;
+  min-height: 200px;
+  text-align: center;
+}
 
-  @keyframes rgb {
-    0% {
-      color: var(--cyan);
-    }
-    50% {
-      color: var(--white);
-    }
-    100% {
-      color: var(--cyan);
-    }
+@keyframes rgb {
+  0% {
+    color: var(--cyan);
   }
+  50% {
+    color: var(--white);
+  }
+  100% {
+    color: var(--cyan);
+  }
+}
 
 .portfolios--overlay img {
   transform: scale(1);
@@ -496,8 +535,8 @@ footer p {
     display: grid;
     width: 100%;
     grid-template-areas:
-    'front back'
-    'learning learning';
+      "front back"
+      "learning learning";
     gap: 1rem;
     align-items: flex-start;
     justify-content: center;
@@ -510,13 +549,12 @@ footer p {
   .skills--container article:nth-child(2) {
     grid-area: back;
   }
-  
+
   .skills--container article:nth-child(3) {
     padding: 0;
     grid-area: learning;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .slider--talents {
@@ -545,6 +583,10 @@ footer p {
     font-size: 26px;
   }
 
+  .button--cv {
+    padding: 1rem 2rem;
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -554,7 +596,7 @@ footer p {
     font-weight: 400;
   }
 
-  .skills--container h3{
+  .skills--container h3 {
     font-size: 22px;
     margin-bottom: 2rem;
   }
