@@ -28,6 +28,7 @@ body {
 }
 
 a {
+  text-decoration: none;
   cursor: url("../cursor/hand-up-solid-24.png"), auto;
 }
 
