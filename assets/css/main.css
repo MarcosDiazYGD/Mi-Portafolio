@@ -267,16 +267,18 @@ a {
 }
 
 .main--about-us > p {
+  padding: 2rem;
   color: var(--gray);
-  max-width: 600px;
+  max-width: 1024px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .slider--talents {
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   gap: 2rem;
   overflow: auto;
 }
@@ -284,7 +286,7 @@ a {
 .services--talent {
   background-color: var(--white);
   min-width: 220px;
-  width: 50%;
+  width: 100%;
   max-width: 500px;
   border-radius: 5px;
   display: flex;
@@ -315,7 +317,7 @@ a {
 .skills--container {
   display: grid;
   width: 100%;
-  max-width: 800px;
+  max-width: 1024px;
   gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
   align-items: flex-start;
@@ -555,7 +557,7 @@ footer p {
 
 @media screen and (min-width: 600px) {
   .skills--container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .services--talent {
@@ -595,6 +597,10 @@ footer p {
     padding: 0 4rem;
     font-size: 16px;
     font-weight: 400;
+  }
+
+  .skills--container {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .skills--container h3 {
@@ -645,7 +651,11 @@ footer p {
   }
 
   .slider--talents {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
     overflow: hidden;
+    margin: 0 auto;
   }
 
   .navbar--ul a:hover {
